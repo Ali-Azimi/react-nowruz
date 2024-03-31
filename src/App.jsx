@@ -10,7 +10,9 @@ import ProductDetail from "./components/ProductDetail/ProductDetail"
 
 function App() {
   const [isFirstTime, setIsFirstTime] = useState(localStorage.getItem("isFirstTime") || "true")
-  const [favoriteItems, setFavoriteItems] = useState(JSON.parse(localStorage.getItem("favoriteItems")) || [])
+  const [favoriteItems, setFavoriteItems] = useState(JSON.parse(localStorage.getItem("favoriteItems")) || []);
+
+  console.log("hi git")
 
   function isFirstTimeSetter() {
     localStorage.setItem("isFirstTime", "false")
